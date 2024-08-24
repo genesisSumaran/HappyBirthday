@@ -1,0 +1,208 @@
+html {
+    font-family: "Poppins", sans-serif;
+    background-color: #FFC0CB;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: linear-gradient(to right, #fa88c1, #f3007a);
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mensaje-cumpleanos {
+    text-align: center;
+    flex: 1;
+}
+
+.mensaje-cumpleanos h2 {
+    margin: 0;
+    color: #000;
+    font-family: 'Lobster Two', cursive;
+    font-size: 2rem;
+}
+
+.encabezado {
+    display: flex;
+    gap: 20px;
+}
+
+.encabezado a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.encabezado a:hover {
+    color: #ffeb3b;
+    transform: scale(1.1);
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+.dedicatoria-contenedor {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.dedicatoria {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    flex: 1;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.dedicatoria h1 {
+    color: #FF69B4;
+    font-family: 'Lobster Two', cursive;
+}
+
+.dedicatoria p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+
+
+.img6 {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.img6:hover {
+    transform: scale(1.1);
+}
+
+.galeria-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.galeria-contenedor h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #FF69B4;
+    font-family: 'Lobster Two', cursive;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 1000px;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: linear-gradient(to right, #fa88c1, #f3007a);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .encabezado {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .dedicatoria-contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dedicatoria {
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    .imagen-al-lado {
+        margin-top: 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .mensaje-cumpleanos h2 {
+        font-size: 1.5rem;
+    }
+
+    .encabezado a {
+        font-size: 1rem;
+    }
+
+    .dedicatoria {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .galeria-contenedor h2 {
+        font-size: 1.5rem;
+    }
+
+    .img6 {
+        width: 300px; /* Ajustado para ser más pequeño en pantallas pequeñas */
+    }
+}
